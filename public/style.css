@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+#accueil,
+#apropos,
+#projets,
+#contact {
+    min-height: 300px;
+}
