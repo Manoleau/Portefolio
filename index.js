@@ -2,27 +2,53 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const port = 3000;
-
 const mysql = require('mysql');
-
-const db = mysql.createConnection({
+const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
     database: 'portfolioDB'
 });
+// require('dotenv').config()
+// const mysql = require('mysql2')
+// const connection = mysql.createConnection(process.env.DATABASE_URL)
+// console.log('Connected to PlanetScale!')
 
+app.use(express.static('public'));
 
-app.get('/projets/info', (req, res) => {
-    db.query('SELECT * FROM projet', (err, result) => {
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'))
+});
+app.get('/projets', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/projets.html'))
+});
+app.get('/aboutme', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/propos.html'))
+});
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/contact.html'))
+});
+app.get('/contacts/info', (req, res) => {
+    connection.query('SELECT * FROM contact', (err, result) => {
         if (err) throw err;
         res.json(result);
     });
 });
-
+app.get('/projets/info', (req, res) => {
+    connection.query('SELECT * FROM projet', (err, result) => {
+        if (err) throw err;
+        res.json(result);
+    });
+});
+app.get('/competences/info', (req, res) => {
+    const query = 'SELECT c.nom, c.image, c.niveau, t.nomType, t.imageType FROM competence as c JOIN typecompetence as t ON c.type = t.id ORDER BY t.id ASC;'
+    connection.query(query, (err, result) => {
+        if (err) throw err;
+        res.json(result);
+    });
+});
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
     console.log(`Serveur lancé sur http://localhost:${port}`);
 });
-

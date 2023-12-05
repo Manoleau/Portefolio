@@ -1,0 +1,21 @@
+footer {
+    flex-shrink: 0;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+footer a img {
+    height: 40px; /* Adjust the size as necessary */
+    width: 40px;
+    margin: 5px;
+}
+
+/* Additional Styles */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}

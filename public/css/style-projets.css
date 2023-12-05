@@ -8,12 +8,14 @@
     width: 300px;
     margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 blue; */
     transition: 0.3s;
+    animation: fadeIn 1s ease-in-out;
     border-radius: 5px;
 }
 
 .project img {
-    width: 100%;
+    width: 100%; 
     border-radius: 5px 5px 0 0;
 }
 
@@ -40,7 +42,65 @@
 .project a:hover {
     background-color: #0056b3;
 }
+.ready:hover {
+    /* background-color: ; */
+    box-shadow: 0 8px 16px 0 green;
+}
 
-.project:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+.notready:hover {
+    box-shadow: 0 8px 16px 0 red;
+}
+.color-legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.legend-title {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+.legend-items {
+    display: flex;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.legend-color.ready {
+    background-color: green;
+}
+
+.legend-color.notready {
+    background-color: red;
+}
+
+.legend-text {
+    font-size: 16px;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
 }
