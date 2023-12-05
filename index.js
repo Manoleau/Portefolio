@@ -2,17 +2,17 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const port = 3000;
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'portfolioDB'
-});
-// require('dotenv').config()
-// const mysql = require('mysql2')
-// const connection = mysql.createConnection(process.env.DATABASE_URL)
-// console.log('Connected to PlanetScale!')
+// const mysql = require('mysql');
+// const connection = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password: 'root',
+//     database: 'portfolioDB'
+// });
+require('dotenv').config()
+const mysql = require('mysql2')
+const connection = mysql.createConnection(process.env.DATABASE_URL)
+console.log('Connected to PlanetScale!')
 
 app.use(express.static('public'));
 
