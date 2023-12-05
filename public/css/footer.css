@@ -6,16 +6,7 @@ footer {
     padding: 10px 0;
 }
 footer a img {
-    height: 40px; /* Adjust the size as necessary */
+    height: 40px;
     width: 40px;
     margin: 5px;
-}
-
-/* Additional Styles */
-h1, h2 {
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 15px;
 }

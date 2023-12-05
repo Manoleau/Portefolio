@@ -1,7 +1,11 @@
-html, body {
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    
     margin: 0;
     padding: 0;
-    height: 100%;
+    background-color: #f4f4f4;
 }
 
 body {
@@ -9,7 +13,7 @@ body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: black;
 }
 
 .content-wrap {

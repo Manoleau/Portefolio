@@ -9,31 +9,35 @@ function loading(){
         const skills = document.getElementById('skills-container');
         const dejadanshtml = []
         comps.forEach(comp => {
+            const li = document.createElement('li');
+            const img_comp = new Image();
+            const a = document.createElement('a');
+            a.href = comp.url
+
+            img_comp.src = comp.image
+            img_comp.alt = comp.nom
+            a.appendChild(img_comp);
+            const skill_name = document.createElement("div");
+            skill_name.classList.add('skill-name')
+            skill_name.textContent = comp.nom
+            a.appendChild(skill_name)
+            const span = document.createElement('span');
+            span.classList.add('level');
+            if(comp.niveau == 1){
+                span.classList.add('beginner');
+                span.textContent = "Débutant";
+            } else if (comp.niveau == 2){
+                span.classList.add('intermediate');
+                span.textContent = "Intermédiaire";
+            } else {
+                span.classList.add('advanced');
+                span.textContent = "Confirmé";
+            }
+            a.appendChild(span);
+            li.appendChild(a);
             if(dejadanshtml.includes(comp.nomType)){
                 const skill_category = document.getElementById("category-"+comp.nomType);
                 const ul = skill_category.getElementsByClassName('sub-skills')[0];
-                const li = document.createElement('li');
-                const img_comp = new Image();
-                img_comp.src = comp.image
-                img_comp.alt = comp.nom
-                li.appendChild(img_comp);
-                const skill_name = document.createElement("div");
-                skill_name.classList.add('skill-name')
-                skill_name.textContent = comp.nom
-                li.appendChild(skill_name)
-                const span = document.createElement('span');
-                span.classList.add('level');
-                if(comp.niveau == 1){
-                    span.classList.add('beginner');
-                    span.textContent = "Débutant";
-                } else if (comp.niveau == 2){
-                    span.classList.add('intermediate');
-                    span.textContent = "Intermédiaire";
-                } else {
-                    span.classList.add('advanced');
-                    span.textContent = "Confirmé";
-                }
-                li.appendChild(span);
                 ul.appendChild(li);
                 skill_category.appendChild(ul);
             } else {
@@ -51,28 +55,29 @@ function loading(){
                 
                 const ul = document.createElement('ul');
                 ul.classList.add('sub-skills');
-                const li = document.createElement('li');
-                const img_comp = new Image();
-                img_comp.src = comp.image
-                img_comp.alt = comp.nom
-                li.appendChild(img_comp);
-                const skill_name = document.createElement("div");
-                skill_name.classList.add('skill-name')
-                skill_name.textContent = comp.nom
-                li.appendChild(skill_name)
-                const span = document.createElement('span');
-                span.classList.add('level');
-                if(comp.niveau == 1){
-                    span.classList.add('beginner');
-                    span.textContent = "Débutant";
-                } else if (comp.niveau == 2){
-                    span.classList.add('intermediate');
-                    span.textContent = "Intermédiaire";
-                } else {
-                    span.classList.add('advanced');
-                    span.textContent = "Confirmé";
-                }
-                li.appendChild(span);
+
+                // const li = document.createElement('li');
+                // const img_comp = new Image();
+                // img_comp.src = comp.image
+                // img_comp.alt = comp.nom
+                // li.appendChild(img_comp);
+                // const skill_name = document.createElement("div");
+                // skill_name.classList.add('skill-name')
+                // skill_name.textContent = comp.nom
+                // li.appendChild(skill_name)
+                // const span = document.createElement('span');
+                // span.classList.add('level');
+                // if(comp.niveau == 1){
+                //     span.classList.add('beginner');
+                //     span.textContent = "Débutant";
+                // } else if (comp.niveau == 2){
+                //     span.classList.add('intermediate');
+                //     span.textContent = "Intermédiaire";
+                // } else {
+                //     span.classList.add('advanced');
+                //     span.textContent = "Confirmé";
+                // }
+                // li.appendChild(span);
                 ul.appendChild(li);
                 skill_category.appendChild(ul);
                 skills.appendChild(skill_category)
@@ -122,6 +127,27 @@ function loading(){
                 a.appendChild(img)
                 footer.appendChild(a)
             });
+        })
+        .catch(error => console.error('Erreur:', error));
+    
+    fetch('/hero/info?id=1')
+        .then(response => response.json())
+        .then(hero => {
+            const herodiv = document.getElementById('hero')
+            const h1_hero = document.createElement('h1')
+            const p_hero = document.createElement('p')
+            h1_hero.textContent = `${hero[0].prenom} ${hero[0].nom}`
+            p_hero.textContent = `${hero[0].age} ans . ${hero[0].nationalite} . ${hero[0].personnalite} . ${hero[0].profession}`
+            herodiv.appendChild(h1_hero)
+            herodiv.appendChild(p_hero)
+            
+            const about = document.getElementById('about-me')
+            const description = hero[0].description.split("|")
+            for(let i = 0; i<description.length; i++){
+                let p = document.createElement('p')
+                p.textContent = description[i]
+                about.appendChild(p)
+            }
         })
         .catch(error => console.error('Erreur:', error));
     

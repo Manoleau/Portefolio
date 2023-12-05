@@ -41,9 +41,19 @@ app.get('/projets/info', (req, res) => {
     });
 });
 app.get('/competences/info', (req, res) => {
-    const query = 'SELECT c.nom, c.image, c.niveau, t.nomType, t.imageType FROM competence as c JOIN typecompetence as t ON c.type = t.id ORDER BY t.id ASC;'
+    const query = 'SELECT c.nom, c.image, c.niveau, c.url, t.nomType, t.imageType FROM competence as c JOIN typecompetence as t ON c.type = t.id ORDER BY t.id ASC, niveau DESC;'
     connection.query(query, (err, result) => {
         if (err) throw err;
+        res.json(result);
+    });
+});
+app.get('/hero/info', (req, res) => {
+    const heroId = req.query.id; 
+    const query = 'SELECT * FROM hero WHERE id = ?';
+    connection.query(query, [heroId], (err, result) => { // Passage de l'ID du héros à la requête
+        if (err) {
+            throw err;
+        }
         res.json(result);
     });
 });
