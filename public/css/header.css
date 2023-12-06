@@ -1,7 +1,7 @@
 nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #007bff;
+    /* background-color: #121212; */
     overflow: hidden;
     margin: 0;
 }
@@ -50,7 +50,8 @@ nav ul li a:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #0056b3;
+    color: white;
 }
 
 .dropdown:hover .dropdown-content {

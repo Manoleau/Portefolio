@@ -4,18 +4,99 @@
     overflow: hidden;
 }
 
-h1, h2 {
-    color: #333;
+#hero {
+    text-align: center;
 }
 
-h1 {
-    margin-top: 20px;
+
+#about-me,
+#hero,
+#objectives,
+#hobbies {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #1F1F1F;
+    border-color: #383838;
+    border-style: solid;
+    border-radius: 8px;
 }
 
-h2 {
-    margin-top: 40px;
+#about-me,
+#hero {
+    max-width: 50%;
+}
+
+#hobbies {
+    max-width: 57%;
+}
+
+#objectives {
+    max-width: 63%;
+}
+
+#about-me h2,
+#objectives h2,
+#hobbies h2 {
+    text-align: center;
+}
+
+#about-me img {
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 5px;
 }
 
 p {
     margin: 20px 0;
+}
+
+#professional-experience {
+    max-width: 70%;
+    background-color: #1F1F1F;
+    border-color: #383838;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+#professional-experience h2 {
+    font-size: 24px;
+    /* Taille de police pour le titre */
+    margin-bottom: 15px;
+    text-align: center;
+    /* Centre le titre */
+}
+
+#professional-experience ul {
+    list-style: none;
+    /* Retire les puces de la liste */
+    padding: 0;
+    margin: 0;
+}
+
+#professional-experience li {
+    background-color: #1F1F1F;
+    border-color: #383838;
+    border-style: solid;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#professional-experience li strong {
+    font-size: 18px;
+}
+
+#professional-experience p {
+    color: #AAA;
+    /* Couleur du texte de description */
+    font-size: 14px;
+    /* Taille de police pour la description */
+    margin-top: 5px;
 }

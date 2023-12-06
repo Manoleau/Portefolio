@@ -47,8 +47,15 @@ app.get('/competences/info', (req, res) => {
         res.json(result);
     });
 });
+app.get('/exppro/info', (req, res) => {
+    const query = 'SELECT * FROM experiencepro ORDER BY dateFin DESC;';
+    connection.query(query, (err, result) => {
+        if (err) throw err;
+        res.json(result);
+    });
+});
 app.get('/hero/info', (req, res) => {
-    const heroId = req.query.id; 
+    const heroId = req.query.id;
     const query = 'SELECT * FROM hero WHERE id = ?';
     connection.query(query, [heroId], (err, result) => { // Passage de l'ID du héros à la requête
         if (err) {

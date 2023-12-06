@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#about-me {
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* ... (les styles précédents restent les mêmes) ... */
+
+section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+section p,
+section ul {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    /* Ajustez selon vos besoins */
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 1rem;
+}
+
+section li strong {
+    color: #333;
+}
+
+/* ... (les styles de médias restent les mêmes) ... */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+}
