@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
 
 </head>
 
@@ -26,12 +27,42 @@
             </ul>
         </nav>
     </header>
-
+    <div class="contact-form">
+        <form id="contactForm">
+            <input type="email" name="email" placeholder="Votre adresse mail (pour vous recontacter)" required>
+            <input type="text" name="subject" placeholder="Objet" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
     <footer>
         <h2>Contact</h2>
     </footer>
+    <script src="js/footer.js"></script>
     <script src="js/header.js"></script>
     <script src="js/menuprojets.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').on('submit', function (e) {
+                e.preventDefault(); // Empêche la soumission normale du formulaire
+
+                $.ajax({
+                    url: '/sendmail',
+                    type: 'POST',
+                    data: $('#contactForm').serialize(),
+                    success: function (response) {
+                        // Affiche une alerte si l'e-mail est envoyé avec succès
+                        alert('E-mail envoyé avec succès!');
+                    },
+                    error: function (error) {
+                        // Affiche une alerte en cas d'erreur
+                        alert('Erreur lors de l\'envoi de l\'e-mail.');
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 
