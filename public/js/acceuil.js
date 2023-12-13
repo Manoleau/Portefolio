@@ -1,8 +1,3 @@
-const loadingScreen = document.getElementById('loading-screen');
-
-function hideLoadingScreen() {
-    loadingScreen.style.display = 'none';
-}
 function loading() {
     fetch('/hero/info?id=1')
         .then(response => response.json())
@@ -94,23 +89,30 @@ function loading() {
             const projet_container = document.getElementById('projet-container');
             projects.forEach(project => {
                 const div_projet = document.createElement('div');
-                div_projet.classList.add('projet')
-                const img = new Image()
+                div_projet.classList.add('projet');
+                const img = new Image();
+                const a = document.createElement('a');
+                if (project.git) {
+                    a.href = project.git;
+                }
                 img.src = project.image;
                 img.alt = project.name;
-                div_projet.appendChild(img)
+                a.appendChild(img);
+                div_projet.appendChild(a);
                 const span = document.createElement('span');
                 span.textContent = project.name;
                 div_projet.appendChild(span)
                 projet_container.appendChild(div_projet)
 
                 const a_menu = document.createElement('a')
+                if (project.git) {
+                    a_menu.href = project.git;
+                }
                 a_menu.textContent = project.name
                 menu_projets.appendChild(a_menu)
             });
         })
         .catch(error => console.error('Erreur:', error));
-    hideLoadingScreen()
 }
 
 window.addEventListener('load', loading);

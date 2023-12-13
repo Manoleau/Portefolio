@@ -16,9 +16,20 @@ fetch('/hero/info?id=1')
             p.textContent = description[i]
             about.appendChild(p)
         }
-        const p_obj = document.createElement('p');
-        p_obj.textContent = hero[0].objectifs;
-        document.getElementById('objectives').appendChild(p_obj)
+        const ul = document.getElementById('objectives').getElementsByTagName('ul')[0]
+        objectifs = hero[0].objectifs.split("|")
+        for(let i = 0; i<objectifs.length; i++){
+            let tmp = objectifs[i].split("$")
+            const li_obj = document.createElement('li');
+            const h4_obj = document.createElement('h4');
+            const p_obj = document.createElement('p');
+            h4_obj.textContent = tmp[0]
+            p_obj.textContent = tmp[1]
+            li_obj.appendChild(h4_obj)
+            li_obj.appendChild(p_obj)
+            ul.appendChild(li_obj)
+        }
+        
     })
     .catch(error => console.error('Erreur:', error));
 

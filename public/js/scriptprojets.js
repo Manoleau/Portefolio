@@ -1,7 +1,3 @@
-const loadingScreen = document.getElementById('loading-screen');
-function hideLoadingScreen() {
-    loadingScreen.style.display = 'none';
-}
 function loading() {
     fetch('/projets/info')
         .then(response => response.json())
@@ -16,6 +12,13 @@ function loading() {
                 } else {
                     div.classList.add('notready')
                 }
+                const a = document.createElement('a');
+                a.classList.add('git')
+                a.textContent = "Git"
+                if (project.git) {
+                    a.href = project.git
+                }
+
                 const img = new Image()
                 img.src = project.image
                 const h3 = document.createElement('h3')
@@ -29,17 +32,21 @@ function loading() {
                 div.appendChild(h3);
                 div.appendChild(p1);
                 div.appendChild(p2);
+                div.appendChild(a);
+                // a.appendChild(div)
                 project_container.appendChild(div);
 
                 const a_menu = document.createElement('a')
                 a_menu.textContent = project.name
+
+                if (project.git) {
+                    a_menu.href = project.git
+                }
                 menu_projets.appendChild(a_menu)
             });
-            hideLoadingScreen();
         }).catch(error => {
             console.error('Erreur:', error)
 
         });
-    hideLoadingScreen();
 }
 window.addEventListener('load', loading);
