@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 const port = 3000;
 // const mysql = require('mysql');
 // const connection = mysql.createConnection({
@@ -15,6 +17,8 @@ const connection = mysql.createConnection(process.env.DATABASE_URL)
 console.log('Connected to PlanetScale!')
 
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'))
@@ -35,7 +39,7 @@ app.get('/contacts/info', (req, res) => {
     });
 });
 app.get('/projets/info', (req, res) => {
-    connection.query('SELECT * FROM projet', (err, result) => {
+    connection.query('SELECT * FROM projet ORDER BY ready DESC;', (err, result) => {
         if (err) throw err;
         res.json(result);
     });
@@ -57,13 +61,43 @@ app.get('/exppro/info', (req, res) => {
 app.get('/hero/info', (req, res) => {
     const heroId = req.query.id;
     const query = 'SELECT * FROM hero WHERE id = ?';
-    connection.query(query, [heroId], (err, result) => { // Passage de l'ID du héros à la requête
+    connection.query(query, [heroId], (err, result) => {
         if (err) {
             throw err;
         }
         res.json(result);
     });
 });
+
+app.post('/sendmail', (req, res) => {
+    const { email, subject, message } = req.body;
+
+    let transporter = nodemailer.createTransport({
+        service: 'gmail', // Ou un autre service
+        auth: {
+            user: 'emmanuelar.pro@gmail.com', // Votre adresse e-mail
+            pass: 'hkxp kqtf etgx psdl' // Votre mot de passe
+        }
+    });
+
+    let mailOptions = {
+        from: 'emmanuelar.pro@gmail.com', // L'adresse e-mail du client
+        to: 'emmanuelar.pro@gmail.com', // Votre adresse e-mail
+        subject: subject,
+        text: "De " + email + " : \n" + message
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+            res.redirect("/contact?success=0")
+        } else {
+            console.log('Email envoyé : ' + info.response);
+            res.redirect("/contact?success=1")
+        }
+    });
+});
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
