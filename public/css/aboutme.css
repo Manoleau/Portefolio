@@ -11,8 +11,7 @@
 
 #about-me,
 #hero,
-#objectives,
-#hobbies {
+#objectives {
     margin: 10px auto;
     padding: 20px;
     background-color: #1F1F1F;
@@ -23,15 +22,11 @@
 
 #about-me,
 #hero {
-    max-width: 50%;
-}
-
-#hobbies {
-    max-width: 57%;
+    max-width: 42%;
 }
 
 #objectives {
-    max-width: 63%;
+    width: 50%;
 }
 
 #about-me h2,
@@ -41,7 +36,7 @@
 }
 
 #about-me img {
-    width: 10%;
+    width: 20%;
     display: block;
     margin-left: auto;
     margin-right: auto;

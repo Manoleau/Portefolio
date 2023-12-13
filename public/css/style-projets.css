@@ -4,7 +4,55 @@
     justify-content: space-around;
 }
 
+a {
+    text-decoration: none;
+    color: #FDFDFD;
+}
+
+.git {
+    position: absolute;
+    /* Position absolue pour le bouton */
+    bottom: 10px;
+    /* Distance du bas de la div */
+    left: 50%;
+    /* Positionnement à 50% de la largeur du conteneur */
+    transform: translateX(-50%);
+    /* Décaler le bouton de -50% de sa propre largeur pour le centrer */
+
+    background-color: #0056b3;
+    /* Couleur de fond */
+    padding: 10px 20px;
+    /* Espacement intérieur */
+    text-align: center;
+    /* Alignement du texte */
+    text-decoration: none;
+    /* Pas de soulignement pour le lien */
+    display: inline-block;
+    /* Type d'affichage */
+    font-size: 16px;
+    /* Taille de la police */
+    margin: 4px 2px;
+    /* Marge externe */
+    cursor: pointer;
+    /* Curseur en forme de pointeur */
+    border: none;
+    /* Pas de bordure */
+    border-radius: 5px;
+    /* Bordures arrondies */
+    transition-duration: 0.4s;
+    /* Durée de l'effet de transition */
+}
+
+/* Effet de survol pour le bouton */
+.git:hover {
+    background-color: #003d82;
+    /* Couleur de fond au survol */
+}
+
+
 .project {
+    padding-bottom: 55px;
+    position: relative;
     background-color: #1F1F1F;
     border-color: #383838;
     border-style: solid;
