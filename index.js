@@ -75,14 +75,14 @@ app.post('/sendmail', (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail', // Ou un autre service
         auth: {
-            user: 'emmanuelar.pro@gmail.com', // Votre adresse e-mail
-            pass: 'hkxp kqtf etgx psdl' // Votre mot de passe
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         }
     });
 
     let mailOptions = {
-        from: 'emmanuelar.pro@gmail.com', // L'adresse e-mail du client
-        to: 'emmanuelar.pro@gmail.com', // Votre adresse e-mail
+        from: process.env.EMAIL_USER, // L'adresse e-mail du client
+        to: process.env.EMAIL_USER, // Votre adresse e-mail
         subject: subject,
         text: "De " + email + " : \n" + message
     };
