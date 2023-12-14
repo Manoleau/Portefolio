@@ -1,6 +1,6 @@
 .contact-form {
     width: 70%;
-    height: 65vh;
+    height: 70vh;
     text-align: center;
     margin: 10px auto;
     padding: 20px;
@@ -32,11 +32,10 @@
 
 .contact-form textarea {
     resize: none;
-    height: 40vh;
+    height: 50vh;
 }
 
 .contact-form button {
-    width: 95%;
     padding: 10px;
     border: none;
     background-color: #007bff;
@@ -44,6 +43,7 @@
     cursor: pointer;
     border-radius: 4px;
     margin-top: 10px;
+    bottom: 0;
 }
 
 .contact-form button:hover {
