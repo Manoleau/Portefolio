@@ -11,6 +11,13 @@ function loading() {
             herodiv.appendChild(p_hero)
 
             const about = document.getElementById('about-me')
+            const img = document.createElement('img')
+        if(hero[0].image){
+            img.src = hero[0].image
+        } else {
+            img.src = "img/3135715.png"
+        }
+        about.appendChild(img)
             const description = hero[0].description.split("|")
             for (let i = 0; i < description.length; i++) {
                 let p = document.createElement('p')

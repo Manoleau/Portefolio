@@ -8,8 +8,17 @@ fetch('/hero/info?id=1')
         p_hero.textContent = `${hero[0].age} ans . ${hero[0].nationalite} . ${hero[0].personnalite} . ${hero[0].profession}`
         herodiv.appendChild(h1_hero)
         herodiv.appendChild(p_hero)
+        
+
 
         const about = document.getElementById('about-me')
+        const img = document.createElement('img')
+        if(hero[0].image){
+            img.src = hero[0].image
+        } else {
+            img.src = "img/3135715.png"
+        }
+        about.appendChild(img)
         const description = hero[0].description.split("|")
         for (let i = 0; i < description.length; i++) {
             let p = document.createElement('p')
