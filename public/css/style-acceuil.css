@@ -12,7 +12,7 @@
 #hero {
   margin: 10px auto;
   padding: 20px;
-  max-width: 50%;
+  max-width: 70%;
   background-color: #1F1F1F;
   border-color: #383838;
   border-style: solid;
@@ -25,7 +25,7 @@
 
 #about-me img {
   width: 100px;
-    height: 100px;
+  height: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;

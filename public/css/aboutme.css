@@ -22,11 +22,11 @@
 
 #about-me,
 #hero {
-    max-width: 42%;
+    max-width: 65%;
 }
 
 #objectives {
-    width: 50%;
+    width: 70%;
 }
 
 #about-me h2,
@@ -50,7 +50,7 @@ p {
 }
 
 #professional-experience {
-    max-width: 70%;
+    max-width: 80%;
     background-color: #1F1F1F;
     border-color: #383838;
     border-style: solid;

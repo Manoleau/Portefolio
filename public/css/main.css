@@ -25,3 +25,25 @@ body {
 .content-wrap {
     flex: 1;
 }
+
+/* Media Query pour les écrans de moins de 600px de large (généralement téléphones) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Media Query pour les écrans de plus de 600px de large mais de moins de 1200px (généralement tablettes et petits écrans d'ordinateur) */
+@media (min-width: 601px) and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/* Media Query pour les écrans de plus de 1200px de large (généralement écrans d'ordinateur) */
+@media (min-width: 1201px) {
+    body {
+        font-size: 18px;
+    }
+
+}
