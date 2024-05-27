@@ -1,0 +1,76 @@
+{
+    "skills" : [
+        {
+            "name" : "Language",
+            "img" : "img/backend.png",
+            "data" : [
+                {
+                    "name" : "HTML",
+                    "niveau" : 3,
+                    "img" : "img/html.png"
+                },
+                {
+                    "name" : "PHP",
+                    "niveau" : 3,
+                    "img" : "img/php.png"
+                },
+                {
+                    "name" : "Python",
+                    "niveau" : 3,
+                    "img" : "img/python.png"
+                },
+                {
+                    "name" : "Java",
+                    "niveau" : 2,
+                    "img" : "img/java.png"
+                },
+                {
+                    "name" : "Kotlin",
+                    "niveau" : 2,
+                    "img" : "img/Kotlin.png"
+                },
+                {
+                    "name" : "JavaScript",
+                    "niveau" : 2,
+                    "img" : "img/js.png"
+                },
+                {
+                    "name" : "CSS",
+                    "niveau" : 1,
+                    "img" : "img/css.png"
+                },
+                {
+                    "name" : "C",
+                    "niveau" : 1,
+                    "img" : "img/C.png"
+                }
+            ]
+        },
+        {
+            "name" : "Framework",
+            "img" : "img/framework.png",
+            "data" : [
+                {
+                    "name" : "Symfony",
+                    "niveau" : 3,
+                    "img" : "img/symfony.png"
+                },
+                {
+                    "name" : "Node.js",
+                    "niveau" : 2,
+                    "img" : "img/nodejs.png"
+                },
+                {
+                    "name" : "Vue.js",
+                    "niveau" : 2,
+                    "img" : "img/vuejs.png"
+                },
+                {
+                    "name" : "Bootstrap",
+                    "niveau" : 2,
+                    "img" : "img/bootstrap.png"
+                }
+            ]
+        }
+    ]
+}
