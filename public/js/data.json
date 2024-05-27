@@ -66,11 +66,56 @@
                     "img" : "img/vuejs.png"
                 },
                 {
+                    "name" : "React.js",
+                    "niveau" : 2,
+                    "img" : "img/React.png"
+                },
+                {
                     "name" : "Bootstrap",
                     "niveau" : 2,
                     "img" : "img/bootstrap.png"
+                },
+                {
+                    "name" : "Tailwind",
+                    "niveau" : 1,
+                    "img" : "img/Tailwind.svg"
+                }
+            ]
+        },
+        {
+            "name" : "Base de données",
+            "img" : "img/database.png",
+            "data" : [
+                {
+                    "name" : "MySQL",
+                    "niveau" : 3,
+                    "img" : "img/mysql.png"
                 }
             ]
         }
+    ],
+    "me" : {
+        "img" : "img/moi.png",
+        "description" : "Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, "
+    },
+    "projets" : [
+        {
+            "name" : "Portfolio",
+            "img" : "https://www.aht.li/3815090/image.png",
+            "git" : "https://github.com/Manoleau/Portfolio",
+            "ready" : true,
+            "description" :"Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, |Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, "
+        }
+    ],
+    "exppro" : [
+        {
+            "name" : "Stage OnylRocks",
+            "datadebut" : "15 avril 2024",
+            "datefin" : null,
+            "description" : "Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, "
+        }
+    ],
+    "contact" : [
+
     ]
 }
