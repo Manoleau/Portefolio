@@ -83,7 +83,7 @@
             ]
         },
         {
-            "name" : "Base de données",
+            "name" : "DataBase",
             "img" : "img/database.png",
             "data" : [
                 {

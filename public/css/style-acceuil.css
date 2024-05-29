@@ -86,95 +86,72 @@ li a {
   margin-top: 5px;
 }
 
-.skills .skills-container {
-  max-width: 90%;
-  margin: auto;
+.filters {
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 10px;
 }
 
-.skills {
-  background-color: #181818;
-  border-color: #383838;
-  border-style: solid;
-  border-radius: 5px;
-  margin: 5px auto;
-  max-width: 90%;
-}
-
-.skills h2 {
-  text-align: center;
-  width: 100%;
-}
-
-.skill-category {
-  flex: 0 1 calc(12.5% - 10px);
-  /* Ajustement pour huit colonnes */
-  min-width: 140px;
-  /* Assurez-vous que c'est assez petit pour permettre huit colonnes */
-  margin-bottom: 20px;
-  text-align: center;
-
-}
-
-.skill-category img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.skill-category ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skill-category li {
-  background-color: #1F1F1F;
-  border-color: #383838;
-  border-style: solid;
-  /* background-color: #f0f0f0; */
-  margin: 5px 0;
-  padding: 5px 10px;
-  border-radius: 5px;
+.skill {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  transition: all 0.3s ease;
-  /* Ajoute une transition pour lisser l'effet de survol */
-}
-
-.skill-category li:hover {
-  background-color: #181818;
-  transform: scale(1.05);
-}
-
-.skill-category li img {
-  /* Pas besoin de marge à droite, car nous utilisons justify-content */
-}
-
-.skill-name {
-  font-size: 0.9em;
-  /* Ajustez la taille de la police selon vos besoins */
-  margin-bottom: 5px;
-  /* Espace entre le nom de la compétence et le niveau */
-}
-
-.level {
-  padding: 2px 5px;
+  padding: 20px;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  color: black;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.skill img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.skill .level {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffeb3b;
+  padding: 5px;
+  border-radius: 3px;
   font-size: 0.8em;
+  color: #333;
 }
 
-.level.beginner {
-  background-color: #ff6666;
+.skill[data-level="1"] .level {
+  background-color: #ff5722;
 }
 
-.level.intermediate {
-  background-color: #FFAA00;
+.skill[data-level="2"] .level {
+  background-color: #ff9800;
 }
 
-.level.advanced {
-  background-color: #66cc66;
+.skill[data-level="3"] .level {
+  background-color: #4caf50;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
 }
