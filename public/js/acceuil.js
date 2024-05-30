@@ -21,15 +21,19 @@ function loading() {
 
     const projet_container = document.getElementById('projet-container');
 
-    const p_description = document.createElement('p');
     const img_moi = new Image();
 
     img_moi.src = data["me"]["img"]
     img_moi.alt = "Emmanuel Ardoin"
 
-    p_description.innerHTML = data["me"]["description"]
     aboutme.appendChild(img_moi)
-    aboutme.appendChild(p_description);
+    let description = data["me"]["description"].split('|');
+    description.forEach(element => {
+        const p = document.createElement('p');
+        p.textContent = element;
+        aboutme.appendChild(p);
+    })
+    
     const typeDejaMis = [];
     data["skills"].forEach(skill => {
         if (!typeDejaMis.includes(skill.name)) {

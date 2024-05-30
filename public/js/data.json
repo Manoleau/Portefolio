@@ -96,7 +96,7 @@
     ],
     "me" : {
         "img" : "img/moi.png",
-        "description" : "Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, "
+        "description" : "Salut ! Moi, c'est Emmanuel. Actuellement en deuxième année d'études en informatique, je suis le genre de personne qui adore résoudre des casse-têtes et transformer les lignes de code en quelque chose de cool et fonctionnel.|Tout a commencé quand j'ai décidé de démonter mon vieux PC pour y changer les pièces et avoir plus de performances dans les jeux vidéos. Depuis, je suis fasciné par tout ce qui touche à la technologie et au développement.|Pour être honnête, l'école et moi, ça n'a pas toujours été une histoire d'amour. Mais quand il s'agit de mettre les mains dans le cambouis et de travailler sur des projets personnels, là je suis dans mon élément. Que ce soit pour développer des bots discord qui me plaisent ou pour trifouiller dans le hardware, je suis toujours prêt à relever le défi.|Quand je ne suis pas en train de coder ou de me plonger dans mes études, vous pouvez me trouver en train de jouer aux jeux vidéo ou en train de regarder des vidéos de Underscore_. Ça me permet de me détendre et de m'inspirer pour mes prochains projets.|Je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans le domaine de l'informatique. Si vous avez des projets intéressants ou des défis à relever, n'hésitez pas à me contacter. J'ai hâte de collaborer et de créer quelque chose d'exceptionnel ensemble."
     },
     "projets" : [
         {
@@ -104,8 +104,43 @@
             "img" : "https://www.aht.li/3815090/image.png",
             "git" : "https://github.com/Manoleau/Portfolio",
             "ready" : true,
-            "description" :"Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, |Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, "
+            "description" :"C'est ce site web.|Fait avec HTML, CSS, JavaScript."
+        },
+        {
+            "name" : "EDT IUT",
+            "img" : "https://www.aht.li/3815097/logo_EDTIUT_1.png",
+            "git" : "https://github.com/Manoleau/edt-iut",
+            "ready" : true,
+            "description" : "C'est un bot discord qui affiche les emplois du temps des étudiants à l'IUT informatique mais aussi de voir quelles salles sont libre.|Fait avec Python, Discord."
+        },
+        {
+            "name" : "League DLE",
+            "img" : "https://www.aht.li/3813533/logo_leaguedle.png",
+            "git" : "https://github.com/Manoleau/bot-lol-dle",
+            "ready" : true,
+            "description" : "C'est un bot Discord où on doit trouver la bonne réponse en fonction des informations que le bot donne.|Thème : League of Legends.|Fait avec Python, API LoL, SQLite3, Discord."
+        },
+        {
+            "name" : "MusiCord",
+            "img" : "https://www.aht.li/3818521/MusicCord.png",
+            "ready" : false,
+            "description" : "C'est un bot Discord où l'on peut faire des recherches sur spotify et voir les informations des artistes|Fait avec Python, API Spotify, Discord."
+        },
+        {
+            "name" : "League Mastery",
+            "img" : "img/LeagueMastery.webp",
+            "ready" : true,
+            "git" : "https://github.com/Manoleau/league-mastery",
+            "description" : "Cette une application mobile (projet IUT) qui permet d'obtenir les informations des joueurs sur leurs maîtrises de champions.|Thème : League of Legends.|Fait avec Kotlin (Android Studio), Mobile, Firebase."
+        },
+        {
+            "name" : "API League Mastery",
+            "img" : "img/LeagueMastery.webp",
+            "ready" : true,
+            "git" : "https://github.com/Manoleau/Api-League-Mastery",
+            "description" : "Cette api est conçu pour l'application mobile LeagueMastery (actuellement hors ligne), elle permet d'obtenir les informations des joueurs sur leurs maîtrises de champions.|Thème : League of Legends.|Fait avec JavaScript, Node.js, express, mongoose."
         }
+        
     ],
     "exppro" : [
         {

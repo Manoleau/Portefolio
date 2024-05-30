@@ -6,8 +6,6 @@ function loading() {
         const a = document.createElement('a');
         const img = new Image()
         const h3 = document.createElement('h3')
-        const p1 = document.createElement('p')
-        const p2 = document.createElement('p')
 
         div.classList.add('project')
         if (project.ready) {
@@ -25,14 +23,15 @@ function loading() {
         img.src = project.img
 
         h3.textContent = project.name
-
-        var description = project.description.split('|');
-        p1.textContent = description[0];
-        p2.textContent = description[1];
         div.appendChild(img);
         div.appendChild(h3);
-        div.appendChild(p1);
-        div.appendChild(p2);
+        var description = project.description.split('|');
+        description.forEach(element => {
+            const p1 = document.createElement('p')
+            p1.textContent = element;
+            div.appendChild(p1);
+        })
+        
         div.appendChild(a);
         project_container.appendChild(div);
 

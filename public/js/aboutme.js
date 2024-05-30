@@ -1,15 +1,18 @@
 import data from './data.json' assert { type: 'json' };
 function loading() {
     const aboutme = document.getElementById('about-me');
-    const p_description = document.createElement('p');
     const img_moi = new Image();
 
     img_moi.src = data["me"]["img"]
     img_moi.alt = "Emmanuel Ardoin"
 
-    p_description.innerHTML = data["me"]["description"]
     aboutme.appendChild(img_moi)
-    aboutme.appendChild(p_description);
+    let description = data["me"]["description"].split('|');
+    description.forEach(element => {
+        const p = document.createElement('p');
+        p.textContent = element;
+        aboutme.appendChild(p);
+    })
 
 
     const ul = document.getElementById('professional-experience').getElementsByTagName('ul')[0];
