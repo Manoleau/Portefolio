@@ -74,11 +74,8 @@ li a {
 
 .projet img:hover {
   background-color: #c1c1c1;
-  /* Changement de couleur de fond au survol */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  /* Ajoute une légère ombre */
   transform: scale(1.05);
-  /* Légère augmentation de la taille */
 }
 
 #skills {
