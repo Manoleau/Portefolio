@@ -1,11 +1,23 @@
 footer {
-    flex-shrink: 0;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
+}
+footer a {
+    margin: 0 10px;
 }
 
-footer a img {
-    height: 40px;
-    width: 40px;
-    margin: 5px;
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+footer div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div img {
+    margin-right: 5px;
 }

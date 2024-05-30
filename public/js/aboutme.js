@@ -20,7 +20,7 @@ function loading() {
         const li = document.createElement('li');
         const strong = document.createElement('strong');
         const span = document.createElement('span')
-        if (exp.dateFin) {
+        if (exp.datefin) {
             span.textContent = `${exp.name} (${exp.datadebut} - ${exp.datefin})`;
         } else {
             span.textContent = `${exp.name} (${exp.datadebut} - En cours...)`;

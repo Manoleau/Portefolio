@@ -148,6 +148,18 @@
             "datadebut" : "15 avril 2024",
             "datefin" : null,
             "description" : "Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, Tkt je vais la faire, "
+        },
+        {
+            "name" : "Job été Arboiserie",
+            "datadebut" : "3 juillet 2023",
+            "datefin" : "28 juillet 2023",
+            "description" : "J'ai acquis une sensibilité à la qualité et au souci du détail grâce à mon travail en tant que menuisier artisanal, en veillant à ce que chaque pièce produite soit à la hauteur des normes de qualité les plus élevées."
+        },
+        {
+            "name" : "Job été Colruyt",
+            "datadebut" : "4 juillet 2022",
+            "datefin" : "26 août 2022",
+            "description" : "Première experience professionnelle"
         }
     ],
     "contact" : [
