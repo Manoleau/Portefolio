@@ -90,7 +90,53 @@
                     "name" : "MySQL",
                     "niveau" : 3,
                     "img" : "img/mysql.png"
+                },
+                {
+                    "name" : "PhpMyAdmin",
+                    "niveau" : 3,
+                    "img" : "img/phpmyadmin.png"
+                },
+                {
+                    "name" : "PowerAMC",
+                    "niveau" : 1,
+                    "img" : "img/powerAMC.png"
                 }
+            ]
+        },
+        {
+            "name" : "Outils/IDE/OS",
+            "data" : [
+                {
+                    "name" : "Git",
+                    "niveau" : 3,
+                    "img" : "img/git.png"
+                },
+                {
+                    "name" : "JetBrains",
+                    "niveau" : 3,
+                    "img" : "img/jetbrains.png"
+                },
+                {
+                    "name" : "VS Code",
+                    "niveau" : 3,
+                    "img" : "img/vscode.png"
+                },
+                {
+                    "name" : "Windows",
+                    "niveau" : 3,
+                    "img" : "img/windows.png"
+                },
+                {
+                    "name" : "Mac OS",
+                    "niveau" : 2,
+                    "img" : "img/mac.png"
+                },
+                {
+                    "name" : "Linux",
+                    "niveau" : 2,
+                    "img" : "img/linux.png"
+                }
+
             ]
         }
     ],
@@ -161,8 +207,5 @@
             "datefin" : "26 août 2022",
             "description" : "Première experience professionnelle"
         }
-    ],
-    "contact" : [
-
     ]
 }
