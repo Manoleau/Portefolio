@@ -16,6 +16,9 @@ app.get('/projets', (req, res) => {
 app.get('/aboutme', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/propos.html'))
 });
+app.get('/competence_iut', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/compIUT.html'))
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
