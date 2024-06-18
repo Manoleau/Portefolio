@@ -1,6 +1,9 @@
-import data from './data.json' assert { type: 'json' };
+// import data from './data.json' assert { type: 'json' };
 function loading() {
-    const aboutme = document.getElementById('about-me');
+    fetch('js/data.json')
+    .then(response => response.json())
+    .then(data => {
+        const aboutme = document.getElementById('about-me');
     const img_moi = new Image();
 
     img_moi.src = data["me"]["img"]
@@ -33,5 +36,8 @@ function loading() {
         li.appendChild(p);
         ul.appendChild(li);
     })
+    });
+
+    
 }
 window.addEventListener('load', loading);
