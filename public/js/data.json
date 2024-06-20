@@ -207,5 +207,137 @@
             "datefin" : "26 août 2022",
             "description" : "Première experience professionnelle"
         }
+    ],
+    "compIUT" : [
+        {
+            "tabName" : "comp1",
+            "label" : "Compétence 1",
+            "labelAvance" : "Compétence : Réaliser",
+            "color" : "#B80905",
+            "description" : "Développer : Concevoir, Coder, tester et intégrer une solution informatique poir un client.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#E7D3D3",
+                    "texte" : "Développer des applications informatiques simples"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#EE9494",
+                    "texte" : "Partir des exigences et aller jusqu’à une application complète"
+                },
+                {
+                    "degre" : 3,
+                    "color" : "#B80905",
+                    "texte" : "Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT…)"
+                }
+            ]
+        },
+        {
+            "tabName" : "comp2",
+            "label" : "Compétence 2",
+            "color" : "#ED8C51",
+            "labelAvance" : "Compétence : Optimiser",
+            "description" : "Proposer des applications informatiques optimisées en fonction de critères spécifiques : Temps d'exécution, précision, consommation de ressources, etc...",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#F3E1D1",
+                    "texte" : "Appréhender et construire des algorithmes"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#EDA072",
+                    "texte" : "Sélectionner les algorithmes adéquats pour répondre à un problème donné"
+                },
+                {
+                    "degre" : 3,
+                    "color" : "#ED8C51",
+                    "texte" : "Analyser et optimiser des applications"
+                }
+            ]
+        },
+        {
+            "tabName" : "comp3",
+            "label" : "Compétence 3",
+            "color" : "#EFBA11",
+            "labelAvance" : "Compétence : Administrer",
+            "description" : "Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d'une organisation.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#F4E7B6",
+                    "texte" : "Installer et configurer un poste de travail"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#F2D768",
+                    "texte" : "Déployer des services dans une architecture réseau"
+                }
+            ]
+        },
+        {
+            "tabName" : "comp4",
+            "label" : "Compétence 4",
+            "color" : "#8CC850",
+            "labelAvance" : "Compétence : Gérer",
+            "description" : "Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l'entreprise.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#E1E6D6",
+                    "texte" : "Concevoir et mettre en place une base de données à partir d’un cahier des charges client"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#ADD582",
+                    "texte" : "Optimiser une base de données, interagir avec une application et mettre en oeuvre la sécurité"
+                }
+            ]
+        },
+        {
+            "tabName" : "comp5",
+            "label" : "Compétence 5",
+            "color" : "#0A215E",
+            "labelAvance" : "Compétence : Conduire",
+            "description" : "Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#CAD8EB",
+                    "texte" : "Identifier les besoins métiers des clients et des utilisateurs"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#89ADD9",
+                    "texte" : "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs"
+                }
+            ]
+        },
+        {
+            "tabName" : "comp6",
+            "label" : "Compétence 6",
+            "color" : "#0F0F0F",
+            "labelAvance" : "Compétence : Collaborer",
+            "description" : "Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#D5D1BD",
+                    "texte" : "Identifier ses aptitudes pour travailler dans une équipe"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#A9A074",
+                    "texte" : "Situer son rôle et ses missions au sein d’une équipe informatique"
+                },
+                {
+                    "degre" : 3,
+                    "color" : "#0F0F0F",
+                    "texte" : "Manager une équipe informatique"
+                }
+            ]
+            
+        }       
     ]
 }

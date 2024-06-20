@@ -9,7 +9,65 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/compIut.css">
+    <style>
+        h2, h1 {
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
 
+        .tabs button {
+            background-color: inherit;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 14px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tabs button:hover {
+            background-color: #555;
+        }
+
+        .tabs button.active {
+            background-color: #4CAF50;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tab-content h3 {
+            color: #4CAF50;
+        }
+
+        .niveaux-container {
+            margin-top: 20px;
+        }
+
+        .niveau {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .niveau p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,29 +81,11 @@
             </ul>
         </nav>
     </header>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Compétences</th>
-                <th>SAE</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Ligne 1</th>
-                <td>Cellule 1.1</td>
-            </tr>
-            <tr>
-                <th>Ligne 2</th>
-                <td>Cellule 2.1</td>
-            </tr>
-            <tr>
-                <th>Ligne 3</th>
-                <td>Cellule 3.1</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="tabs">
+        
+    </div>
+    <h1>BUT Informatique</h1>
+    <h2>Parcours A : Réalisation d'applications : conception, développement, validation</h1>
 
     <footer>
         <h2>Contact</h2>
@@ -59,7 +99,7 @@
             <img src="img/discord.png" alt="discord-icon">
         </a>
     </footer>
-    <script type="module" src="js/aboutme.js"></script>
+    <script type="module" src="js/competenceIUT.js"></script>
 </body>
 
 </html>
