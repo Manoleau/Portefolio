@@ -16,10 +16,10 @@
         .tabs {
             display: flex;
             justify-content: center;
-            background-color: #333;
         }
 
         .tabs button {
+            opacity: 70%;
             background-color: inherit;
             color: white;
             border: none;
@@ -29,12 +29,10 @@
             transition: background-color 0.3s;
         }
 
-        .tabs button:hover {
-            background-color: #555;
-        }
-
         .tabs button.active {
-            background-color: #4CAF50;
+            opacity: 100%;
+            border: 1px solid white;
+            font-weight: bold;
         }
 
         .tab-content {
@@ -87,6 +85,7 @@
             z-index: 1000;
             display: none;
         }
+        
 
         .niveau-atteint:hover .justification {
             display: block;
@@ -105,13 +104,15 @@
             </ul>
         </nav>
     </header>
-    <div class="tabs">
-        
-    </div>
     <h1>BUT Informatique</h1>
     <h2>Parcours A : Réalisation d'applications : conception, développement, validation</h1>
 
+    <div class="tabs">
+        
+    </div>
+    
     <footer>
+        2024 Emmanuel Ardoin © Mon Portfolio. Tous droits réservés.
         <h2>Contact</h2>
         <a href="mailto:emmanuelar.pro@gmail.com" title="emmanuelar.pro@gmail.com" target="_blank">
             <img src="img/gmail.png" alt="emmanuelar.pro@gmail.com">

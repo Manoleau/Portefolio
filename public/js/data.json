@@ -240,8 +240,9 @@
                     "SAE - Java et Graphe",
                     "SAE - Daily Info",
                     "SAE - Annuaire en C",
+                    "Projet - CoursesPhp",
                     "Perso - LeagueMastery sur Mobile et son API",
-                    "Perso - Les bots discord"
+                    "Perso - Les bots discord en python"
                 ]
             }
         },
@@ -273,8 +274,11 @@
                 "texte" : "...",
                 "projet" : [
                     "Stage - OnylRocks",
+                    "SAE - Comparaison algorithmique en python",
+                    "SAE - Daily Info",
+                    "Projet - CoursesPhp",
                     "Perso - LeagueMastery sur Mobile et son API",
-                    "Perso - Les bots discord"
+                    "Perso - Les bots discord en python"
                 ]
             }
 
@@ -301,9 +305,7 @@
             "justification" : {
                 "texte" : "...",
                 "projet" : [
-                    "...",
-                    "...",
-                    "..."
+                    "SAE - Création/Configuration d'un réseaux"
                 ]
             }
         },
@@ -330,8 +332,12 @@
                 "texte" : "...",
                 "projet" : [
                     "Stage - OnylRocks",
-                    "...",
-                    "..."
+                    "SAE - Daily Info",
+                    "SAE - Création base de données - Fleuriste",
+                    "SAE - Analyse avec Power BI",
+                    "Projet - CoursesPhp",
+                    "Perso - LeagueMastery sur Mobile et son API",
+                    "Perso - Les bots discord en python"
                 ]
             }
         },
@@ -358,8 +364,10 @@
                 "texte" : "...",
                 "projet" : [
                     "Stage - OnylRocks",
-                    "...",
-                    "..."
+                    "SAE - Daily Info",
+                    "SAE - Poster",
+                    "SAE - Recueil de besoins",
+                    "Projet - CoursesPhp"
                 ]
             }
 
@@ -392,8 +400,10 @@
                 "texte" : "...",
                 "projet" : [
                     "Stage - OnylRocks",
-                    "...",
-                    "..."
+                    "SAE - Daily Info",
+                    "SAE - Poster",
+                    "SAE - Environnement économique",
+                    "Projet - CoursesPhp"
                 ]
             }     
         }       

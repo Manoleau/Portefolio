@@ -44,8 +44,9 @@ function loading() {
                     const justification = document.createElement('div');
                     justification.classList.add('justification');
                     justification.innerHTML = `
+                        <h1>Justification du niveau ${niveau.degre}</h1>
                         <p>${comp.justification.texte}</p>
-                        <p><strong>Les projets/SAE qui font référence</strong></p>
+                        <p><strong>Les projets/SAE associés</strong></p>
                         <ul>
                             ${comp.justification.projet.map(projet => `<li>${projet}</li>`).join('')}
                         </ul>
@@ -77,10 +78,10 @@ function openTab(evt, tabName) {
     }
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].classList.remove('active');
     }
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.classList.add('active');
 }
 
 window.addEventListener('load', loading);
