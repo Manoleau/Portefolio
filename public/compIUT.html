@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Propos de Moi</title>
+    <title>Compétences IUT</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -58,6 +58,7 @@
         }
 
         .niveau {
+            opacity: 85%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
@@ -66,6 +67,29 @@
 
         .niveau p {
             margin: 0;
+        }
+        .niveau-atteint {
+            opacity: 100%;
+            border: 2px solid white;
+            font-weight: bold;
+            position: relative;
+        }
+        .justification {
+            background-color: #151515;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 5px;
+            position: absolute;
+            bottom: -120%;
+            left: 0;
+            width: calc(100% - 20px);
+            z-index: 1000;
+            display: none;
+        }
+
+        .niveau-atteint:hover .justification {
+            display: block;
         }
     </style>
 </head>

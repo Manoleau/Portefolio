@@ -211,10 +211,10 @@
     "compIUT" : [
         {
             "tabName" : "comp1",
-            "label" : "Compétence 1",
+            "label" : "Réaliser",
             "labelAvance" : "Compétence : Réaliser",
             "color" : "#B80905",
-            "description" : "Développer : Concevoir, Coder, tester et intégrer une solution informatique poir un client.",
+            "description" : "Développer : Concevoir, Coder, tester et intégrer une solution informatique pour un client.",
             "niveaux" : [
                 {
                     "degre" : 1,
@@ -231,11 +231,23 @@
                     "color" : "#B80905",
                     "texte" : "Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT…)"
                 }
-            ]
+            ],
+            "niveauAtteint" : 2,
+            "justification" : {
+                "texte" : "...",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "SAE - Java et Graphe",
+                    "SAE - Daily Info",
+                    "SAE - Annuaire en C",
+                    "Perso - LeagueMastery sur Mobile et son API",
+                    "Perso - Les bots discord"
+                ]
+            }
         },
         {
             "tabName" : "comp2",
-            "label" : "Compétence 2",
+            "label" : "Optimiser",
             "color" : "#ED8C51",
             "labelAvance" : "Compétence : Optimiser",
             "description" : "Proposer des applications informatiques optimisées en fonction de critères spécifiques : Temps d'exécution, précision, consommation de ressources, etc...",
@@ -255,11 +267,21 @@
                     "color" : "#ED8C51",
                     "texte" : "Analyser et optimiser des applications"
                 }
-            ]
+            ],
+            "niveauAtteint" : 2,
+            "justification" : {
+                "texte" : "...",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "Perso - LeagueMastery sur Mobile et son API",
+                    "Perso - Les bots discord"
+                ]
+            }
+
         },
         {
             "tabName" : "comp3",
-            "label" : "Compétence 3",
+            "label" : "Administrer",
             "color" : "#EFBA11",
             "labelAvance" : "Compétence : Administrer",
             "description" : "Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d'une organisation.",
@@ -274,11 +296,20 @@
                     "color" : "#F2D768",
                     "texte" : "Déployer des services dans une architecture réseau"
                 }
-            ]
+            ],
+            "niveauAtteint" : 1,
+            "justification" : {
+                "texte" : "...",
+                "projet" : [
+                    "...",
+                    "...",
+                    "..."
+                ]
+            }
         },
         {
             "tabName" : "comp4",
-            "label" : "Compétence 4",
+            "label" : "Gérer",
             "color" : "#8CC850",
             "labelAvance" : "Compétence : Gérer",
             "description" : "Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l'entreprise.",
@@ -293,11 +324,20 @@
                     "color" : "#ADD582",
                     "texte" : "Optimiser une base de données, interagir avec une application et mettre en oeuvre la sécurité"
                 }
-            ]
+            ],
+            "niveauAtteint" : 1,
+            "justification" : {
+                "texte" : "...",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "...",
+                    "..."
+                ]
+            }
         },
         {
             "tabName" : "comp5",
-            "label" : "Compétence 5",
+            "label" : "Conduire",
             "color" : "#0A215E",
             "labelAvance" : "Compétence : Conduire",
             "description" : "Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles.",
@@ -312,11 +352,21 @@
                     "color" : "#89ADD9",
                     "texte" : "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs"
                 }
-            ]
+            ],
+            "niveauAtteint" : 1,
+            "justification" : {
+                "texte" : "...",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "...",
+                    "..."
+                ]
+            }
+
         },
         {
             "tabName" : "comp6",
-            "label" : "Compétence 6",
+            "label" : "Collaborer",
             "color" : "#0F0F0F",
             "labelAvance" : "Compétence : Collaborer",
             "description" : "Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.",
@@ -336,8 +386,16 @@
                     "color" : "#0F0F0F",
                     "texte" : "Manager une équipe informatique"
                 }
-            ]
-            
+            ],
+            "niveauAtteint" : 2,
+            "justification" : {
+                "texte" : "...",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "...",
+                    "..."
+                ]
+            }     
         }       
     ]
 }

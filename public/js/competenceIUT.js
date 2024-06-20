@@ -36,7 +36,24 @@ function loading() {
                 niveauDiv.style.backgroundColor = niveau.color;
 
                 const niveauTexte = document.createElement('p');
-                niveauTexte.textContent = `Niveau ${niveau.degre} : ${niveau.texte}`;
+
+                if (niveau.degre === comp.niveauAtteint) {
+                    niveauDiv.classList.add('niveau-atteint');
+                    niveauTexte.textContent = `Niveau ${niveau.degre} (Atteint) : ${niveau.texte}`;
+
+                    const justification = document.createElement('div');
+                    justification.classList.add('justification');
+                    justification.innerHTML = `
+                        <p>${comp.justification.texte}</p>
+                        <p><strong>Les projets/SAE qui font référence</strong></p>
+                        <ul>
+                            ${comp.justification.projet.map(projet => `<li>${projet}</li>`).join('')}
+                        </ul>
+                    `;
+                    niveauDiv.appendChild(justification);
+                } else {
+                    niveauTexte.textContent = `Niveau ${niveau.degre} : ${niveau.texte}`;
+                }
 
                 niveauDiv.appendChild(niveauTexte);
                 niveauxContainer.appendChild(niveauDiv);
@@ -46,10 +63,8 @@ function loading() {
             containerComp.appendChild(descriptionComp);
             containerComp.appendChild(niveauxContainer);
 
-            // Insérer le contenu avant le footer
             footer.parentNode.insertBefore(containerComp, footer);
         });
-        // Ouvrir le premier onglet par défaut
         tabs.getElementsByTagName('button')[0].click();
     });  
 }
