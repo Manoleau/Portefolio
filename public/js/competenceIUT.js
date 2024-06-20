@@ -46,6 +46,7 @@ function loading() {
                     justification.innerHTML = `
                         <h1>Justification du niveau ${niveau.degre}</h1>
                         <p>${comp.justification.texte}</p>
+                        <br>
                         <p><strong>Les projets/SAE associés</strong></p>
                         <ul>
                             ${comp.justification.projet.map(projet => `<li>${projet}</li>`).join('')}

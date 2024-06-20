@@ -234,7 +234,7 @@
             ],
             "niveauAtteint" : 2,
             "justification" : {
-                "texte" : "...",
+                "texte" : "Je suis tout à fait capable de créer une application complète dans un langage donné car j'ai réalisé de nombreux projets sur divers langages au cours de mes 4 semestres d'études ainsi que dans mes projets personnels. Cependant, je manque d'expertise pour l'adapter à plusieurs langages.",
                 "projet" : [
                     "Stage - OnylRocks",
                     "SAE - Java et Graphe",
@@ -271,7 +271,7 @@
             ],
             "niveauAtteint" : 2,
             "justification" : {
-                "texte" : "...",
+                "texte" : "Je pense avoir un très bon niveau dans ce domaine, mais pas excellent non plus. En testant une application, je suis capable de repérer rapidement les problèmes d'optimisation et de trouver des solutions adaptées à ceux-ci.",
                 "projet" : [
                     "Stage - OnylRocks",
                     "SAE - Comparaison algorithmique en python",
@@ -303,7 +303,7 @@
             ],
             "niveauAtteint" : 1,
             "justification" : {
-                "texte" : "...",
+                "texte" : "J'ai le niveau minimal pour cette compétence car je n'ai pas trouvé les TP intéressants ni bien concrétisés, donc je ne m'y suis pas beaucoup investi. De plus, ce n'est pas le parcours BUT que j'ai choisi.",
                 "projet" : [
                     "SAE - Création/Configuration d'un réseaux"
                 ]
@@ -327,9 +327,9 @@
                     "texte" : "Optimiser une base de données, interagir avec une application et mettre en oeuvre la sécurité"
                 }
             ],
-            "niveauAtteint" : 1,
+            "niveauAtteint" : 2,
             "justification" : {
-                "texte" : "...",
+                "texte" : "Je pense être entre le niveau 1 et 2 dans cette compétence. Avant mon stage chez OnylRocks, je savais comment intégrer une base de données avec une application grâce aux API et l'optimiser, mais je ne savais pas mettre en œuvre la sécurité avec un système de chiffrement.",
                 "projet" : [
                     "Stage - OnylRocks",
                     "SAE - Daily Info",
@@ -361,7 +361,7 @@
             ],
             "niveauAtteint" : 1,
             "justification" : {
-                "texte" : "...",
+                "texte" : "Je pense être à ce niveau là car ce n'est pas mon fort",
                 "projet" : [
                     "Stage - OnylRocks",
                     "SAE - Daily Info",
@@ -397,7 +397,7 @@
             ],
             "niveauAtteint" : 2,
             "justification" : {
-                "texte" : "...",
+                "texte" : "Le stage chez Onyl Rocks m'a vraiment aidé à travailler au sein d'une équipe mais aussi à m'y retrouver dans les missions. Les SAE n'étaient pas vraiment utiles pour cela.",
                 "projet" : [
                     "Stage - OnylRocks",
                     "SAE - Daily Info",
